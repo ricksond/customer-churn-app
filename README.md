@@ -1,11 +1,18 @@
 # customer-churn-app
 
-Data Engineering Pipeline
-STEP 1: Created a Connection to PostgreSQL database and loaded the raw dataset as a table.
-        Identify the Columns which are suitable for churn Prediction and change the type of each raw table column into suitable types. Also make sure there are no dublicates in selected features.
+STEP 1: Data Engineering Pipeline
+1. Established a connection to a PostgreSQL database and loaded the raw Telco Customer Churn dataset into a table.
+2. Identified the relevant columns for churn prediction and ensured each column was converted to the appropriate data type.
+3. Removed or prevented duplicate records within the selected feature set.
+4. Created a separate table containing only the cleaned and relevant features for modeling.
+5. Exported the processed table to a CSV file for use in the machine learning pipeline.
 
-        Create a seperate table to store only relevant features.
-        Convert the New table into a csv File.
+Step 2: Machine Learning Pipeline
+(To be implemented)
 
-STEP 2: ML Pipeline
--Yet to Start
+Planned steps:
+1. Load the cleaned dataset.
+2. Perform feature preprocessing and encoding.
+3. Train machine learning models to predict customer churn.
+4. Evaluate model performance using appropriate metrics.
+5. Save the trained model for API deployment.
