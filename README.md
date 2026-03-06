@@ -11,8 +11,8 @@ Step 2: Machine Learning Pipeline
 (To be implemented)
 
 Planned steps:
-1. Load the cleaned dataset.
-2. Perform feature preprocessing and encoding.
+1. Load the cleaned dataset. (Done)
+2. Perform feature preprocessing and convert them into train test sets.
 3. Train machine learning models to predict customer churn.
 4. Evaluate model performance using appropriate metrics.
 5. Save the trained model for API deployment.
