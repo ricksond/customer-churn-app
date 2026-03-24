@@ -11,8 +11,8 @@ def load_df():
     df=pd.read_csv(csv_path)
 
     # ML Models need numeric values so change boolean values in "senior_citizen" and "churn"
-    df["churn"]=df["churn"].map({'t':1,'f':0})
-    df["senior_citizen"]=df["senior_citizen"].map({'t':1,'f':0})
+    df["churn"]=df["churn"].map({"t":1,"f":0})
+    df["senior_citizen"]=df["senior_citizen"].map({"t":1,"f":0})
     print(df.head())
     return df
 
