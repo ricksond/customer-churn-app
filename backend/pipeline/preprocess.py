@@ -13,5 +13,8 @@ def load_df():
 
     # ML Models need numeric values so change boolean values in "senior_citizen" and "churn"
     df["churn"] = df["churn"].apply(lambda x:1 if x == "t" else 0)
-    df["senior_citizen"] = df["senior_citizen"].astype(int)
+    df["senior_citizen"] = df["senior_citizen"].apply(lambda x:1 if x=="t" else 0)
+    print(df.head())
     return df
+
+load_df()
